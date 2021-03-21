@@ -4,7 +4,7 @@ var birthYearInput = document.querySelector('input[type="number"]');
 var femaleButton = document.querySelector('input#female');
 var maleButton = document.querySelector('input#male');
 
-var msgDiv = document.querySelector('div#msg');
+var msgP = document.querySelector('p#msg');
 var photoDiv = document.querySelector('div#photo')
 var img = document.querySelector('img#profile');
 
@@ -17,9 +17,9 @@ function detect() {
     var femaleCheck = femaleButton.checked;
     var maleCheck = maleButton.checked;
 
-    if (birthYear >= 1900 && birthYear <= currentYear) {
-        var age = currentYear - birthYear;
-        let text;
+    if (birthYear.length !== 0 && Number(birthYear) >= 1900 && Number(birthYear) <= currentYear) {
+        var age = currentYear - Number(birthYear);
+        let person;
 
         if (!femaleCheck && !maleCheck) {
             alert('Gender undefined!')
@@ -46,7 +46,7 @@ function detect() {
                 }
             }
 
-            msgDiv.innerHTML = `Detectamos ${person} com ${age} anos.`;
+            msgP.innerHTML = `Detectamos ${person} com ${age} anos.`;
             img.src = `images/${person.toLowerCase()}.png`;
 
             if (!photoDiv.style.display) {

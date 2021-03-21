@@ -3,7 +3,7 @@ body {
     font: normal 15pt Arial;
 }
 
-header, footer{
+header, footer {
     color: white;
     text-align: center;
 }
@@ -17,9 +17,8 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
-div {
+div, p {
     text-align: center;
-    padding: 8px;
 }
 
 footer {
