@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <body onload="carregar()"> -->
+<body>
+    <header>
+        <h1>Detector de idade</h1>
+    </header>
+    <section>
+        <div id="birth">
+            <span>Ano de Nascimento: </span><input type="number" name="year" id="year">
+        </div>
+        <div id="gender">
+            <span>Gênero: </span>
+            <label for="male">
+                <input id="male" type="radio" name="gender" >Masculino
+            </label>
+            <label for="female">
+                <input id="female" type="radio" name="gender" >Feminino
+            </label>
+        </div>
+        <div id="send">
+            <input type="button" value="Verificar" id="verify">
+        </div>
+        <div id="msg">
+            Preencha os dados acima para ver o resultado.
+        </div>
+        <div id="photo">
+            <img id="profile" src="" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
