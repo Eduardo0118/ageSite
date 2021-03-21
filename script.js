@@ -47,7 +47,7 @@ function detect() {
             }
 
             msgDiv.innerHTML = `Detectamos ${person} com ${age} anos.`;
-            img.src = `${person.toLowerCase()}.png`;
+            img.src = `images/${person.toLowerCase()}.png`;
 
             if (!photoDiv.style.display) {
                 photoDiv.style.display = 'block';
